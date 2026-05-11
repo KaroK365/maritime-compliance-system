@@ -20,7 +20,9 @@ public class CorsConfig {
 
                 registry.addMapping("/**")
                         .allowedOrigins(
-                                "http://localhost:5173"
+                                "http://localhost:5173",
+                                "https://maritime-backend-uv5g.onrender.com",
+                                "https://maritime-compliance-system-drab.vercel.app/"
                         )
                         .allowedMethods("*")
                         .allowedHeaders("*");
